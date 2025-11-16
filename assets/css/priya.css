@@ -582,10 +582,6 @@ img {
   --ztc-family-font1: 'Host Grotesk', sans-serif;
 }
 
-.text_blue{
-  color: var( --ztc-text-text-4) !important;
-}
-
 /*============= COMMON CSS AREA ===============*/
 .heading1 h5 {
   color: var(--ztc-text-text-4);
@@ -720,7 +716,6 @@ img {
     transition: all 0.6s;
     padding: 18px 24px;
     border-radius: 4px;
-    border:0 !important;
     position: relative;
     z-index: 1;
     color: #fff;
@@ -752,13 +747,9 @@ img {
   transform: rotate(-45deg);
   transition: all 0.4s;
 }
-.service1 .heading1 h5{
-  color:#fff !important;
-}
-
 .vl-btn1:hover {
   transition: all 0.4s;
-  /* transform: translateY(-10px); */
+  transform: translateY(-10px);
   color: var(--ztc-text-text-1);
 }
 .vl-btn1:hover::after {
@@ -5367,7 +5358,7 @@ img {
   z-index: 1;
   overflow: hidden;
   padding: 275px 0 32px;
-  background: var(--ztc-bg-bg-3) !important;
+  background: var(--ztc-bg-bg-4);
 }
 .vl-footer1-section-area .elements2 {
   position: absolute;
@@ -10287,12 +10278,12 @@ ul.header-links li i {
 .cta1-aection-area {
   position: relative;
   z-index: 2;
-  margin-bottom: -126px !important;
+  margin-bottom: -200px;
 }
 .cta1-aection-area .cta-bg-area {
   position: relative;
   z-index: 1;
-  background: var(--ztc-bg-bg-4) !important;
+  background: var(--ztc-bg-bg-3);
   border-radius: 16px;
   padding: 0 60px;
 }
@@ -10414,10 +10405,10 @@ ul.header-links li i {
 }
 
 .testimonials-2 {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    background: #1f2148 !important;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: var(--ztc-bg-bg-2);
 }
 .testimonials-2 .heading1 h5 {
   color: var(--ztc-text-text-1);
@@ -12977,3 +12968,134 @@ ul.header-links li i {
 }
 
 /*============= ABOUT CSS AREA ENDS ===============*//*# sourceMappingURL=main.css.map */
+
+
+
+/*===mycode==============*/
+
+.electric-imger{
+display:flex;
+flex-wrap:wrap;
+
+}
+.plumbers{
+  width:50%;
+   transform: perspective(350px) rotateX(0deg) rotateY(-13deg);
+    margin-top: -10px;
+}
+
+.earth{
+  width:50%;
+} 
+.plumbers img {
+    animation: floatUpDown 4s ease-in-out infinite;
+    border-radius: 20px;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px); /* move up */
+  }
+  100% {
+    transform: translateY(0); /* back down */
+  }
+}
+
+.earth img {
+  animation: floatUpDowns 4s ease-in-out infinite;
+  border-radius: 20px;
+}
+
+@keyframes floatUpDowns {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* move up */
+  }
+  100% {
+    transform: translateY(0); /* back down */
+  }
+}
+
+.service1 .service-main-boxarea .title {
+    color: #fff;
+}
+.service1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #000b1b;
+    opacity: 0.8;
+    /* z-index: 1; */
+}
+.sp2 {
+    padding: 100px 0 70px;
+    border-radius: 45px;
+}
+
+.service1 .heading1 h5{
+  color:#fff;
+}
+.service1 .heading1 h2{
+  color:#fff;
+}
+
+.service1 .service-main-boxarea .readmore {
+  color:#fff;
+}
+
+
+.service-main-boxarea .icons {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(120deg,
+        #143c76,
+        #0056a0,
+        #008ccf,
+        #e8e8e8,
+        #008ccf,
+        #0056a0,
+        #143c76
+    ) !important;
+
+    background-size: 300% 300%;
+    animation: gradientFlow 10s ease-in-out infinite;
+}
+
+/* Color-changing shimmer */
+.service-main-boxarea .icons::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 150%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        rgba(20, 60, 118, 0),
+        rgba(0, 140, 207, 0.7),
+        rgba(232, 232, 232, 0.8),
+        rgba(0, 140, 207, 0.7),
+        rgba(20, 60, 118, 0)
+    );
+
+    background-size: 200% 200%;
+    animation: shimmerMove 3.8s linear infinite,
+               shimmerColor 6s ease-in-out infinite;
+}
+
+
+.others1 .others-boxarea .icons img {
+    transition: 0.5s ease;
+}
+
+/* On hover → shimmer color effect */
+.others1 .others-boxarea:hover .icons img {
+    animation: iconShimmer 2.8s linear infinite !important;
+    filter: brightness(1.4) !important;
+}
