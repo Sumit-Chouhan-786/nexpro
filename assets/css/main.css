@@ -582,6 +582,10 @@ img {
   --ztc-family-font1: 'Host Grotesk', sans-serif;
 }
 
+.text_blue {
+  color: var(--ztc-text-text-4);
+}
+
 /*============= COMMON CSS AREA ===============*/
 .heading1 h5 {
   color: var(--ztc-text-text-4);
@@ -741,7 +745,7 @@ img {
 }
 .vl-btn1:hover {
   transition: all 0.4s;
-  transform: translateY(-10px);
+  /* transform: translateY(-10px); */
   color: var(--ztc-text-text-1);
 }
 .vl-btn1:hover::after {
@@ -5380,7 +5384,7 @@ img {
   font-weight: var(--ztc-weight-regular);
   line-height: 24px;
 }
-.vl-footer1-section-area .footer-logo-area .social-links li {
+/* .vl-footer1-section-area .footer-logo-area .social-links li {
   display: inline-block;
   margin: 0 6px 0 0;
 }
@@ -5405,7 +5409,7 @@ img {
   color: var(--ztc-text-text-1);
   transition: all 0.4s;
   border: 1px solid var(--ztc-text-text-4);
-}
+} */
 .vl-footer1-section-area .footer-widget-area.foot-padding1 {
   padding-left: 70px;
 }
@@ -5428,6 +5432,7 @@ img {
   padding-top: 24px;
 }
 .vl-footer1-section-area .footer-widget-area.foot-padding1 ul li a {
+  position: relative;
   color: var(--ztc-text-text-3);
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s16);
@@ -5437,29 +5442,62 @@ img {
   display: inline-block;
   transition: all 0.4s;
 }
-.vl-footer1-section-area .footer-widget-area.foot-padding1 ul li a:hover {
-  color: var(--ztc-text-text-4);
-  transition: all 0.4s;
-  padding-left: 5px;
+/* Create the underline */
+.vl-footer1-section-area .footer-widget-area.foot-padding1 ul li a::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 0%;
+  background: var(--ztc-text-text-2);
+  border-radius: 50%;
+  left: 0;
+  bottom: -2px;
+  transition: width 0.4s ease;
 }
+
+/* Expand underline on hover */
+.vl-footer1-section-area .footer-widget-area.foot-padding1 ul li a:hover::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 0%;
+  background: var(--ztc-text-text-4);
+  border-radius: 50%;
+  left: 0;
+  bottom: -2px;
+  transition: width 0.4s ease;
+}
+.vl-footer1-section-area .footer-widget-area.foot-padding1 ul li a:hover::before {
+  width: 100%;
+}
+
 .vl-footer1-section-area .footer-widget-area.foot-padding2 ul li {
   padding-top: 24px;
 }
 .vl-footer1-section-area .footer-widget-area.foot-padding2 ul li a {
   color: var(--ztc-text-text-3);
-  font-family: var(--ztc-family-font1);
-  font-size: var(--ztc-font-size-font-s16);
-  font-style: normal;
-  font-weight: var(--ztc-weight-regular);
-  line-height: 16px;
-  display: inline-block;
+  position: relative;
   transition: all 0.4s;
 }
-.vl-footer1-section-area .footer-widget-area.foot-padding2 ul li a:hover {
-  color: var(--ztc-text-text-4);
-  transition: all 0.4s;
-  padding-left: 5px;
+
+/* Create the underline */
+.vl-footer1-section-area .footer-widget-area.foot-padding2 ul li a::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 0%;
+  background: var(--ztc-text-text-4);
+  border-radius: 50%;
+  left: 0;
+  bottom: -2px;
+  transition: width 0.4s ease;
 }
+
+/* Expand underline on hover */
+.vl-footer1-section-area .footer-widget-area.foot-padding2 ul li a:hover::before {
+  width: 100%;
+}
+
 .vl-footer1-section-area .footer-widget-area h3 {
   color: var(--ztc-text-text-2);
   font-family: var(--ztc-family-font1);
@@ -10245,7 +10283,7 @@ img {
 .cta1-aection-area {
   position: relative;
   z-index: 2;
-  margin-bottom: -200px;
+  margin-bottom: -120px;
 }
 .cta1-aection-area .cta-bg-area {
   position: relative;
