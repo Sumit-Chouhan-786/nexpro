@@ -724,9 +724,8 @@ img {
     position: relative;
     z-index: 1;
     color: #fff;
-    background: linear-gradient(36deg, #143c76, #2746746e, #143c76);
+    background:var(--ztc-bg-bg-3);
     background-size: 300%;
-    animation: btnShimmer 4s linear infinite;
 }
 
 @keyframes btnShimmer {
@@ -5574,6 +5573,7 @@ img {
 /*============= HEADER CSS AREA ENDS ===============*/
 .homepage1-body .vl-transparent-header {
   position: absolute;
+  background-color: white;
   top: 0;
   left: 0;
   right: 0;
@@ -5753,7 +5753,7 @@ ul.header-links li i {
   opacity: 70%;
 }
 .homepage1-body .vl-main-menu ul > li > a {
-  color: var(--ztc-text-text-1);
+  color: var(--ztc-text-text-4);
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s18);
   display: inline-block;
@@ -6031,7 +6031,7 @@ ul.header-links li i {
   right: 0;
   top: 0;
   animation: 0.7s ease-in-out 0s normal none 1 running vlfadeInDown;
-  background-color: rgba(0, 0, 0, 0.76);
+  background-color: white;
 }
 .homepage1-body .header-sticky .header-top-area {
   display: none;
@@ -6317,7 +6317,7 @@ ul.header-links li i {
   line-height: 18px;
   display: inline-block;
   transition: all 0.6s;
-  background: var(--ztc-bg-bg-3);
+  background: var(--ztc-bg-bg-4);
   padding: 18px 24px;
   border-radius: 4px;
   position: relative;
