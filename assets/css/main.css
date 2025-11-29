@@ -5387,7 +5387,6 @@ img {
   height: 62px;
   -o-object-fit: contain;
      object-fit: contain;
-  filter: brightness(0);
 }
 .vl-footer1-section-area .footer-logo-area p {
   color: var(--ztc-text-text-3);
@@ -5701,6 +5700,13 @@ ul.header-links li i {
 }
 .homepage1-body .vl-transparent-header .header-top-area .header-top-main .hsocial-phn-area .tel-phn svg {
   margin: -4px 4px 0 0;
+}
+.homepage1-body .vl-transparent-header .vl-logo {
+  background-color: white;
+  padding: 4px 2px;
+  max-width: 150px;
+  border-radius: 4px;
+
 }
 .homepage1-body .vl-transparent-header .vl-logo img {
   width: 164px;
