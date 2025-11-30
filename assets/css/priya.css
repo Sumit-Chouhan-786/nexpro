@@ -3378,7 +3378,7 @@ img {
   outline: none;
   background: none;
   transition: all 0.4s;
-  color: var(--ztc-text-text-2);
+  color: var(--ztc-text-text-4);
   font-size: var(--ztc-font-size-font-s20);
 }
 .homepage3-body .vl-offcanvas {
@@ -3533,7 +3533,7 @@ img {
   outline: none;
   background: none;
   transition: all 0.4s;
-  color: var(--ztc-text-text-2);
+  color: var(--ztc-text-text-4);
   font-size: var(--ztc-font-size-font-s20);
 }
 .homepage4-body .vl-offcanvas {
@@ -5738,7 +5738,7 @@ ul.header-links li i {
   display: inline-block;
   position: relative;
   transition: 0.4s;
-  padding: 0 16px;
+  padding: 0 14px;
   font-weight: var(--ztc-weight-medium);
 }
 .homepage1-body .vl-main-menu ul > li:hover a {
