@@ -1060,7 +1060,7 @@ img {
   border-bottom: 1px solid #DCDCDC;
 }
 .service1 .service-main-boxarea p {
-  color: var(--ztc-text-text-3);
+  color:white;
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s16);
   font-style: normal;
