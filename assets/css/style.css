@@ -252,3 +252,227 @@ canvas {
 background-color: var(--ztc-bg-bg-3) !important;
 color: white;
 }
+
+
+/* footer css */
+.neo-footer {
+  background: linear-gradient(135deg, #0a1f44, #020b2d);
+  padding: 170px 0 30px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* ================= WAVE ================= */
+.footer-wave svg {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/* ================= FLOATING ORBS ================= */
+.floating-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.35;
+  animation: floatMove 18s infinite alternate;
+  z-index: 0;
+}
+
+.orb1 {
+  width: 240px;
+  height: 240px;
+  background: #00bfff;
+  top: 10%;
+  left: 10%;
+}
+
+.orb2 {
+  width: 320px;
+  height: 320px;
+  background: #ff00ff;
+  bottom: 20%;
+  right: 15%;
+  animation-delay: 6s;
+}
+
+.orb3 {
+  width: 180px;
+  height: 180px;
+  background: #00ffcc;
+  top: 40%;
+  right: 35%;
+  animation-delay: 10s;
+}
+
+@keyframes floatMove {
+  0%   { transform: translateY(0) translateX(0); }
+  100% { transform: translateY(-70px) translateX(50px); }
+}
+
+/* ================= GLOWING BORDER ================= */
+.glow-border::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 14px;
+  background: linear-gradient(90deg,#00bfff,#ff00ff,#00ffcc,#00bfff);
+  background-size: 400%;
+  z-index: -1;
+  animation: glowMove 10s linear infinite;
+}
+
+@keyframes glowMove {
+  0% { background-position: 0%; }
+  100% { background-position: 400%; }
+}
+
+/* ================= LIGHT SWEEP ================= */
+.neo-footer::before {
+  content:"";
+  position:absolute;
+  top:0;
+  left:-120%;
+  width:45%;
+  height:100%;
+  background: linear-gradient(120deg,transparent,rgba(255,255,255,.12),transparent);
+  animation: lightSweep 7s infinite;
+}
+
+@keyframes lightSweep {
+  0% { left:-120%; }
+  50% { left:130%; }
+  100% { left:130%; }
+}
+
+/* ================= SOCIAL ICON PULSE ================= */
+.neo-social {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.neo-social a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.12);
+  display: grid;
+  place-items: center;
+  color: #fff;
+  transition: 0.4s;
+  animation: pulse 2.5s infinite;
+}
+
+.neo-social a:hover i{
+color: white;
+}
+.neo-social a:hover {
+  background: #00bfff;
+  transform: translateY(-6px) rotate(8deg);
+}
+
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(0,191,255,0.6); }
+  70%  { box-shadow: 0 0 0 16px rgba(0,191,255,0); }
+  100% { box-shadow: 0 0 0 0 rgba(0,191,255,0); }
+}
+
+/* ================= TITLES ================= */
+.footer-title {
+  font-weight: 700;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.footer-title::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: #00bfff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+
+/* ================= LINKS ================= */
+.neo-links,
+.neo-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.neo-links li {
+  margin-bottom: 12px;
+}
+
+.neo-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: .4s;
+  position: relative;
+}
+
+.neo-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #00bfff;
+  left: 0;
+  bottom: -4px;
+  transition: 0.4s;
+}
+
+.neo-links a:hover::after {
+  width: 100%;
+}
+
+.neo-links a:hover {
+  color: #00bfff;
+}
+
+/* ================= CONTACT GLOW ================= */
+.neo-contact li {
+  color: #ccc;
+  margin-bottom: 12px;
+  font-size: 14px;
+  transition: .3s;
+}
+
+.neo-contact li:hover {
+  color: #00bfff;
+  text-shadow: 0 0 12px rgba(0,191,255,0.7);
+}
+
+.neo-contact a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* ================= FOOTER LINE ================= */
+.footer-line {
+  border-color: rgba(255,255,255,0.15);
+  margin: 40px 0 20px;
+}
+
+.neo-footer p,
+.neo-footer a {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.neo-footer a:hover {
+  color: #00bfff;
+}
+
+.footer_logo{
+  background-color: white;
+  max-width: 200px;
+}
