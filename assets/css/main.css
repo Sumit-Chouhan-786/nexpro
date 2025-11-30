@@ -10298,7 +10298,7 @@ ul.header-links li i {
 .cta1-aection-area .cta-bg-area {
   position: relative;
   z-index: 1;
-  background: var(--ztc-bg-bg-4) !important;
+  background: var(--ztc-bg-bg-3) !important;
   border-radius: 16px;
   padding: 0 60px;
 }
