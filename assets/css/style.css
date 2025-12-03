@@ -476,3 +476,203 @@ color: white;
   background-color: white;
   max-width: 200px;
 }
+
+/* gallery section css */
+  
+/* FLEXBOX WRAPPER */
+.gallery-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+}
+
+/* IMAGE BOX */
+.gallery-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+/* IMAGE SIZE TYPES */
+.small {
+  flex: 1 1 calc(25% - 18px);
+  height: 220px;
+}
+
+.medium {
+  flex: 1 1 calc(33.33% - 18px);
+  height: 280px;
+}
+
+.big {
+  flex: 1 1 calc(50% - 18px);
+  height: 350px;
+}
+
+/* IMAGES */
+.gallery-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .4s ease;
+}
+
+/* HOVER EFFECT */
+.gallery-box:hover img {
+  transform: scale(1.15);
+  filter: brightness(0.6);
+}
+
+/* OVERLAY + PLUS ICON */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 60, 118, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.gallery-box:hover .overlay {
+  opacity: 1;
+}
+
+.overlay span {
+  font-size: 55px;
+  color: #fff;
+}
+
+/* LIGHTBOX CLOSE BUTTON */
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 50;
+  width: 45px;
+  height: 45px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(4px);
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.lightbox-close:hover {
+  transform: scale(1.15);
+  background: rgba(255,255,255,0.35);
+}
+
+.lightbox-close i {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .big, .medium, .small {
+    flex: 1 1 calc(50% - 18px);
+  }
+}
+
+@media (max-width: 576px) {
+  .big, .medium, .small {
+    flex: 1 1 100%;
+  }
+}
+    /* solution section css */
+        .glass-card {
+    padding: 35px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(12px);
+    color: #fff;
+    text-align: center;
+    transition: 0.4s;
+}
+.glass-card i {
+    font-size: 50px;
+    color: #45caff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #45caff;
+}
+.glass-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #45caff, 0 0 50px #0ef;
+}
+
+        /* Section Titles */
+        .section-title {
+            font-weight: 700;
+            font-size: 34px;
+            color: #143c76;
+        }
+
+        /* Features Grid */
+        .feature-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.08);
+            transition: 0.4s;
+        }
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
+        }
+        .feature-box i {
+            font-size: 45px;
+            color: #143c76;
+            margin-bottom: 15px;
+        }
+
+        /* Services Section */
+        .service-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: 0.4s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Parallax */
+        .parallax-section {
+            background: url('https://images.unsplash.com/photo-1518770660439-4636190af475') center/cover fixed;
+            color: #fff;
+            padding: 120px 0;
+        }
+
+        /* CTA */
+        .cta-section {
+            background: linear-gradient(45deg, #143c76, #0056a0);
+            padding: 70px 0;
+            color: #fff;
+        }
+        .cta-section .btn {
+            background: #fff;
+            color: #143c76;
+            font-weight: 600;
+            padding: 12px 30px;
+        }
+
+        /* Logos */
+        .brand-logo img {
+            width: 120px;
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+        .brand-logo img:hover {
+            opacity: 1;
+        }
