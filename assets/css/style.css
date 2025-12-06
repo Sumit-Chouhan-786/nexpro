@@ -676,3 +676,25 @@ color: white;
         .brand-logo img:hover {
             opacity: 1;
         }
+
+        /*coder*/
+
+        .energy-solar {
+          background-color:#143c76;
+          border-radius:inherit;
+        }
+        .energy-solar .others-boxarea:hover .title {
+    color: #143c76;
+    transition: all 0.4s;
+}
+.energy-solar .others-boxarea:hover {
+    background: #ffffff;
+    transition: all 0.4s;
+    transform: translateY(-10px);
+    color: #143c76;
+}
+.plumbers img {
+    height: 553px;
+    object-fit: cover;
+    /* margin-right: 47px; */
+}
