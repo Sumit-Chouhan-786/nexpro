@@ -13160,6 +13160,7 @@ flex-wrap:wrap;
   margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 /* Top small title */
 .service-small-title {
     font-size: 14px;
@@ -13594,3 +13595,5 @@ flex-wrap:wrap;
 .contact-mains h2 , .contact-mains h4{
   color:#143c76 !important; 
 }
+=======
+>>>>>>> 0a3fbb9f83368d53cee4d3bffdece24f87ff0427
