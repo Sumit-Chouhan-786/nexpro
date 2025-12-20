@@ -13606,7 +13606,10 @@ flex-wrap:wrap;
 .contact-mains h2 , .contact-mains h4{
   color:#143c76 !important; 
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6a0e7540bfb3648c485bf53bfbfb0e68db204020
 /***/
 .service-mains {
     padding: 60px 0;
@@ -13945,4 +13948,9 @@ flex-wrap:wrap;
 
 .products-mains .product-btn:hover {
   background: #7cb342;
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 6a0e7540bfb3648c485bf53bfbfb0e68db204020
