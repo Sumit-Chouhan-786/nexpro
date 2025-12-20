@@ -13160,7 +13160,6 @@ flex-wrap:wrap;
   margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 /* Top small title */
 .service-small-title {
     font-size: 14px;
@@ -13595,5 +13594,343 @@ flex-wrap:wrap;
 .contact-mains h2 , .contact-mains h4{
   color:#143c76 !important; 
 }
-=======
->>>>>>> 0a3fbb9f83368d53cee4d3bffdece24f87ff0427
+/***/
+.service-mains {
+    padding: 60px 0;
+}
+
+.service-mains .service-title {
+    color: #d61515;      /* Red heading like screenshot */
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.service-mains .service-subtitle {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.service-mains .service-text p {
+    line-height: 1.8;
+    font-size: 15px;
+    color: #333;
+}
+
+.service-mains .service-img {
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+
+
+.process-iners .card-custom {
+    border: none;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.process-iners .card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 18px rgba(0,0,0,0.2);
+}
+
+.process-iners .card-custom img {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.process-iners .card-title {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.process-iners .btn-red {
+    background: #e92e2e;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.process-iners .btn-red i {
+    font-size: 13px;
+}
+.process-iners {
+    background-color: #f2efeb;
+}
+
+.service-details {
+    background: #f4efe8;   /* same beige background as screenshot */
+    padding: 70px 0;
+}
+
+.service-details .section-title {
+    color: #143c76;
+    font-weight: 700;
+    font-size: 26px;
+    padding-bottom: 24px;
+}
+
+.service-details .section-subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.service-details .section-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.service-details .section-img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.service-details .row-block {
+    margin-bottom: 80px;
+}
+
+.lps-section {
+    padding: 80px 0;
+}
+
+.lps-title {
+    color: #143c76;
+    font-weight: 700;
+}
+
+.lps-subtitle {
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.lps-text {
+    color: #333;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.lps-list li {
+    margin-bottom: 12px;
+    list-style: none;
+    position: relative;
+    padding-left: 22px;
+}
+
+.lps-list li::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    color: #e53935;
+    font-size: 22px;
+    top: -3px;
+}
+
+/* Image Layout */
+.lps-images {
+    position: relative;
+}
+
+.lps-img-big {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.lps-img-small {
+    position: absolute;
+    bottom: -40px;
+    right: -30px;
+    width: 60%;
+    border-radius: 4px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .lps-img-small {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+.lps-card-section {
+    background: #f7f3ef;
+    padding: 80px 0;
+}
+
+/* ===== CARD ===== */
+.lps-card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 30px 25px 35px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: center;
+    height: 100%;
+}
+
+.lps-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.lps-card h5 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* ===== BUTTON ===== */
+.lps-btn {
+    background: #e53935;
+    color: #fff;
+    padding: 8px 18px;
+    font-size: 14px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.lps-btn:hover {
+    background: #c62828;
+    color: #fff;
+}
+
+/* Responsive spacing */
+@media (max-width: 767px) {
+    .lps-card {
+        margin-bottom: 30px;
+    }
+}
+.lps-text {
+    padding-bottom: 20px;
+}
+
+.company-aerosal {
+  padding: 80px 0;
+}
+
+/* Left Image */
+.company-aerosal .company-img {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.company-aerosal .company-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right Content */
+.company-aerosal .company-content h2 {
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.company-aerosal .company-content p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #222;
+}
+
+/* Button */
+.company-aerosal .read-btn {
+  background: #8bc34a;
+  color: #000;
+  font-weight: 600;
+  padding: 14px 40px;
+  border-radius: 40px;
+  border: none;
+  margin-top: 25px;
+}
+
+.company-aerosal read-btn:hover {
+  background: #7cb342;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .company-aerosal .company-content h2 {
+    font-size: 32px;
+  }
+}
+
+.products-mains {
+  padding: 70px 0;
+}
+
+/* Heading */
+.products-mains .products-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.products-mains .products-title span {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #8bc34a;
+  margin: 8px auto 0;
+}
+
+/* Card */
+.products-mains .product-card {
+  border-radius: 12px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+  border: none;
+  height: 100%;
+  text-align: center;
+}
+
+.products-mains .product-card img {
+  max-height: 180px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+/* Card content */
+.products-mains .product-card h5 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.products-mains .product-card p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Button */
+.products-mains .product-btn {
+  background: #8bc34a;
+  border: none;
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 22px;
+  border-radius: 30px;
+}
+
+.products-mains .product-btn:hover {
+  background: #7cb342;
+}
+
