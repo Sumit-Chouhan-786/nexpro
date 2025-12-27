@@ -17,6 +17,16 @@ $(document).ready(function(){
   toggleStickyHeader();
 //========== HEADER ACTIVE ENDS ============= //
 
+  const boxes = document.querySelectorAll(".info-box");
+
+  boxes.forEach(box => {
+    box.addEventListener("click", () => {
+      boxes.forEach(b => b.classList.remove("active-box"));
+      box.classList.add("active-box");
+    });
+  });
+
+
 //========== MOBILE MENU STARTS ============= //
   var vlMenuWrap = $('.vl-mobile-menu-active > ul').clone();
   var vlSideMenu = $('.vl-offcanvas-menu nav');
